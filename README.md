@@ -69,8 +69,8 @@ The backend of this project is responsible for connecting to the MongoDB databas
 
 1. **Clone the Repository:**
    ```bash
-   git clone [repository-url]
-   cd [repository-directory]
+   git clone https://github.com/SujalChoudhari/PackageManager.git
+   cd PackageManager
    ```
 
 2. **Navigate to the Backend Directory:**
