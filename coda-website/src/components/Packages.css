@@ -1,0 +1,130 @@
+/* packages */
+
+.packages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20vh 15vw;
+}
+
+.packages-title {
+    font-size: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+
+.packages-title h3 {
+    background-color: #fff;
+    padding: 0vh 3vw;
+    transform: translateY(2vh);
+}
+
+.packages-content {
+    padding-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.form {
+    margin-bottom: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form label {
+    margin: 1vh 0;
+    font-size: 2vh;
+}
+
+.form input {
+    padding: 1vh;
+    font-size: 2vh;
+    width: 20vw;
+    margin-bottom: 2vh;
+}
+
+.packages-content .add-button {
+    font-size: 2vh;
+    background-color: #aeffae;
+    padding: max(2vh, 5px) max(2vw, 5px);
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.error-message {
+    color: red;
+    margin-top: 1vh;
+}
+
+/* packages-list */
+
+.packages-list {
+    margin: 20px 15%;
+    text-align: center;
+    width: 70vw;
+}
+
+.packages-list h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.packages-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.package-entry {
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name-block {
+    margin-left: 3vw;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.by-block {
+    margin-left: 2vw;
+    color: #555;
+    font-weight: 100;
+    font-size: small;
+}
+
+.get-button {
+    display: inline-block;
+    font-size: 1rem;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    background-color: #b8daff;
+    padding: max(2vh, 5px) max(2vw, 5px);
+    cursor: pointer;
+    margin: 0vh 2vw;
+    border: 2px solid black;
+}
+
+.add-button:hover {
+    background-color: #80ff80;
+}
+
+.get-button:hover {
+    background-color: #0056b3;
+}
+
+.inputs {
+    margin-left: 2vw;
+}

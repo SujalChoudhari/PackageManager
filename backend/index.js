@@ -1,41 +1,48 @@
-const express = require('express');
-const cors = require('cors');
-const mongoose = require('mongoose');
-require('dotenv').config();
+/**
+ * Backend to connect to database (Mongo)
+ * getPackages to retrive all the information
+ * addPackage to add a new list item
+ * 
+ * @author Sujal Choudhari
+ */
 
+const express = require('express');
+const cors = require('cors'); // for policy
+const mongoose = require('mongoose');
+require('dotenv').config(); // to use .env
+
+// create app
 const app = express();
 app.use(cors())
+app.use(express.json());
 const PORT = process.env.PORT || 3001;
 
-// Connect to MongoDB
+// MongoDB Connection
 mongoose.connect(
-    process.env.MONGO_URI,
+    process.env.MONGO_URI, // from .env
     { useNewUrlParser: true, useUnifiedTopology: true }
 );
 
 const db = mongoose.connection;
-
 db.on('error', (error) => console.error('MongoDB connection error:', error));
 db.once('open', () => console.log('Connected to MongoDB'));
 
-// Define a Package schema
+// Schema
 const packageSchema = new mongoose.Schema({
     username: String,
     repoName: String,
 });
-
-// Create a Package model
 const Package = mongoose.model('Package', packageSchema);
 
-// Middleware for handling JSON data
-app.use(express.json());
 
-// Endpoint to add a package to the database
+app.get('/', (req, res) => {
+    return res.send("All Systems Functional")
+})
+
+// Add end point
 app.post('/addPackage', async (req, res) => {
-    const { username, repoName } = req.body;
-    console.log(req.body)
     try {
-        const newPackage = new Package({ username, repoName });
+        const newPackage = new Package(req.body);
         await newPackage.save();
         res.status(201).json({ message: 'Package added successfully' });
     } catch (error) {
@@ -44,10 +51,10 @@ app.post('/addPackage', async (req, res) => {
     }
 });
 
-// Endpoint to get the list of packages from the database
+// get End Point
 app.get('/getPackages', async (req, res) => {
     try {
-        const packages = await Package.find();
+        const packages = await Package.find().limit(50); // send first 50 packages
         res.json(packages);
     } catch (error) {
         console.error('Error fetching packages:', error);

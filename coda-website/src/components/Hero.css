@@ -1,0 +1,49 @@
+/* Hero */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2vh 15vw 0 15vw;
+    background-color: #f0f8ff;
+    padding: 3vh 3vw;
+    border: 1px solid black;
+    background-image: url(../../public/images/hero.jpg);
+}
+
+.hero-title {
+    font-size: 5vh;
+    color: #ddd;
+}
+
+.hero-button-holder {
+    margin: 3vh 0;
+}
+
+
+.hero .button {
+    font-size: 2vh;
+    padding: max(2vh, 5px) max(2vw, 5px);
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.hero-download {
+    background-color: #aeffae;
+    transition: all 0.2s ease-in-out;
+}
+
+.hero-wiki {
+    margin-left: 2vw;
+    background-color: #a3ffff;
+    transition: all 0.2s ease-in-out;
+}
+
+.hero-download:hover {
+    scale: 1.05;
+    background-color: #80ff80;
+}
+
+.hero-wiki:hover {
+    scale: 1.05;
+    background-color: #78ffff;
+}

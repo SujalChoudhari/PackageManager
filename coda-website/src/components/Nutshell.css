@@ -1,0 +1,44 @@
+/* Nutshell */
+
+.nutshell {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2vh 15vw;
+}
+
+.nutshell-title {
+    font-size: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+
+.nutshell-title h3 {
+    background-color: #fff;
+    padding: 0vh 3vw;
+    transform: translateY(2vh);
+}
+
+.nutshell-content {
+    padding-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nutshell-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 3vh;
+}
+
+.nutshell-card {
+    width: 30vw;
+    padding: 4vh;
+}

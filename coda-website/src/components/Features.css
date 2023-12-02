@@ -1,0 +1,50 @@
+/* feature */
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 6vh 1vw;
+    background-color: aliceblue;
+}
+
+.feature-title {
+    font-size: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+    margin: 0vh 15vw;
+
+}
+
+.feature-title h3 {
+    background-color: #fff;
+    padding: 0vh 3vw;
+    transform: translateY(2vh);
+    background-color: aliceblue;
+}
+
+.feature-content {
+    padding-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    margin: 2vh 15vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 3vh;
+}
+
+.feature-card {
+    width: 30vw;
+    padding: 4vh;
+}
