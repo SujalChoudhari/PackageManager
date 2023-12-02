@@ -116,6 +116,20 @@ The backend is built using Node.js, Express, and Mongoose for MongoDB interactio
 
 Feel free to explore and modify the backend code as needed. If you encounter any issues, refer to the error messages in the console or check the MongoDB connection.
 
+
+## Authors
+
+Meet the talented individuals behind the development of PackageManager:
+
+- **Sujal Choudhari**
+  - *Role:* Lead Developer
+
+- **Tanay Shah**
+  - *Role:* Frontend Developer
+
+- **Tanish Bagadia**
+  - *Role:* Backend Developer
+
 ---
 
 This completes the README.md for the PackageManager project, providing comprehensive information on both the frontend and backend aspects. Happy coding!
