@@ -6,19 +6,37 @@ A comprehensive package management system with a user-friendly frontend and a ro
 
 The frontend of the PackageManager project is developed using React.js. Below are the details on setting up and understanding the structure of the frontend.
 
+### Hero Section
+Hero section using Components
+![Home](./public/hero.png)
+
+### Packages Section
+Using MongoDB to Add and Get packages from DB
+![Package](./public/packges.png)
+
+### Foooter Section
+Basic Footer Components with Author Names
+![Footer](./public/footer.png)
 ### Setup
 
-1. **Navigate to the Frontend Directory:**
+1. **Clone the Repository:**
+   ```bash
+   git clone [repository-url]
+   cd [repository-directory]
+   ```
+
+
+2. **Navigate to the Frontend Directory:**
    ```bash
    cd coda-website
    ```
 
-2. **Install Dependencies:**
+3. **Install Dependencies:**
    ```bash
    npm install
    ```
 
-3. **Run the Frontend:**
+4. **Run the Frontend:**
    ```bash
    npm start
    ```
@@ -67,23 +85,19 @@ The backend of this project is responsible for connecting to the MongoDB databas
 
 ### Setup
 
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/SujalChoudhari/PackageManager.git
-   cd PackageManager
-   ```
 
-2. **Navigate to the Backend Directory:**
+
+1. **Navigate to the Backend Directory:**
    ```bash
    cd backend
    ```
 
-3. **Install Dependencies:**
+2. **Install Dependencies:**
    ```bash
    npm install
    ```
 
-4. **Create .env File:**
+3. **Create .env File:**
    Create a `.env` file in the `backend` directory and add the following:
    ```env
    MONGO_URI=your-mongodb-connection-string
@@ -92,7 +106,7 @@ The backend of this project is responsible for connecting to the MongoDB databas
 
    Replace `your-mongodb-connection-string` with your MongoDB connection string.
 
-5. **Run the Backend:**
+4. **Run the Backend:**
    ```bash
    npm start
    ```
