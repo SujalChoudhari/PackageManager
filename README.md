@@ -21,10 +21,9 @@ Basic Footer Components with Author Names
 
 1. **Clone the Repository:**
    ```bash
-   git clone [repository-url]
-   cd [repository-directory]
+   git clone https://github.com/SujalChoudhari/PackageManager.git
+   cd PackageManager
    ```
-
 
 2. **Navigate to the Frontend Directory:**
    ```bash
@@ -71,21 +70,11 @@ The frontend follows a modular structure for better organization. The main entry
 - **Footer:**
   The footer section, often containing contact information or links to related resources.
 
-#### Styling
-
-The styling for the frontend is managed using the `Main.css` file, which is imported into the `Main.js` file.
-
-### Customization
-
-Feel free to customize the components, styles, and content to match your project requirements. The React.js framework allows for easy modification and expansion of the frontend.
-
 ## Backend
 
 The backend of this project is responsible for connecting to the MongoDB database, handling data retrieval, and providing endpoints for adding and fetching packages.
 
 ### Setup
-
-
 
 1. **Navigate to the Backend Directory:**
    ```bash
